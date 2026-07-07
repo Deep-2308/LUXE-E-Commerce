@@ -1,12 +1,8 @@
-/* ================================================================
-   LUXE E-Commerce — Main JavaScript
-   ================================================================ */
+   // LUXE E-Commerce — Main JavaScript
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ============================================================
   // 1. NAVBAR — Scroll effect & Mobile menu
-  // ============================================================
   const navbar = document.querySelector('.navbar');
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
@@ -59,9 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ============================================================
   // 2. ACTIVE NAV LINK
-  // ============================================================
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(link => {
     const href = link.getAttribute('href');
@@ -70,9 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ============================================================
   // 3. SCROLL REVEAL ANIMATION
-  // ============================================================
   const revealElements = document.querySelectorAll('.reveal');
 
   if (revealElements.length > 0) {
@@ -91,9 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => revealObserver.observe(el));
   }
 
-  // ============================================================
   // 4. PRODUCT IMAGE GALLERY (Single Product Page)
-  // ============================================================
   const galleryMain = document.querySelector('.gallery-main img');
   const galleryThumbs = document.querySelectorAll('.gallery-thumb');
 
@@ -134,9 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ============================================================
   // 6. QUANTITY CONTROLS
-  // ============================================================
   document.querySelectorAll('.qty-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const control = btn.closest('.quantity-controls');
@@ -156,9 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ============================================================
   // 7. SIZE SELECTOR
-  // ============================================================
   document.querySelectorAll('.size-option').forEach(option => {
     option.addEventListener('click', () => {
       const parent = option.closest('.size-options');
@@ -167,9 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ============================================================
   // 8. CART FUNCTIONALITY
-  // ============================================================
   const cartBadge = document.querySelector('.cart-badge');
   let cartCount = parseInt(cartBadge?.textContent || '0');
 
@@ -251,9 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (totalEl) totalEl.textContent = '$' + (subtotal + shipping).toFixed(2);
   }
 
-  // ============================================================
   // 9. COUPON CODE
-  // ============================================================
   const couponForm = document.querySelector('.coupon-form');
   if (couponForm) {
     couponForm.addEventListener('submit', (e) => {
@@ -269,9 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ============================================================
   // 10. NEWSLETTER FORM
-  // ============================================================
   document.querySelectorAll('.newsletter-form').forEach(form => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -287,9 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ============================================================
   // 11. CONTACT FORM
-  // ============================================================
   const contactForm = document.querySelector('#contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -299,9 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ============================================================
   // 12. TOAST NOTIFICATIONS
-  // ============================================================
   function showToast(message, type = 'success') {
     // Remove existing toasts
     document.querySelectorAll('.toast').forEach(t => t.remove());
@@ -344,9 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
   }
 
-  // ============================================================
   // 13. SMOOTH SCROLL FOR ANCHOR LINKS
-  // ============================================================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const targetId = this.getAttribute('href');
@@ -359,9 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ============================================================
   // 14. BACK TO TOP
-  // ============================================================
   const backToTop = document.createElement('button');
   backToTop.className = 'back-to-top';
   backToTop.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
@@ -414,9 +386,7 @@ document.addEventListener('DOMContentLoaded', () => {
     backToTop.style.borderColor = 'var(--color-border)';
   });
 
-  // ============================================================
   // 15. INITIAL CART TOTALS CALCULATION
-  // ============================================================
   updateCartTotals();
 
 });
