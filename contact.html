@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — LUXE Premium Fashion</title>
+  <meta name="description" content="Get in touch with LUXE. Visit our store, call us, or send a message. We're here to help with orders, styling advice, and any questions.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">LU<span>X</span>E</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="cart.html" class="nav-cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-badge">0</span></a>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+
+  <!-- ======== PAGE HEADER ======== -->
+  <section class="page-header">
+    <div class="page-header-bg" style="background-image: url('images/page-header.png')"></div>
+    <div class="page-header-content">
+      <h1>Contact Us</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span class="current">Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT INFO ======== -->
+  <section class="section-padding reveal" id="contact-info">
+    <div class="container">
+      <div class="contact-info-grid">
+        <div class="contact-info-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h5>Visit Us</h5>
+          <p>562 Wellington Road,<br>Mumbai, MH 400001, India</p>
+        </div>
+        <div class="contact-info-card">
+          <i class="fa-solid fa-phone"></i>
+          <h5>Call Us</h5>
+          <p>+91 98765 43210<br>Mon – Sat: 10AM – 8PM</p>
+        </div>
+        <div class="contact-info-card">
+          <i class="fa-solid fa-envelope"></i>
+          <h5>Email Us</h5>
+          <p>hello@luxestore.com<br>support@luxestore.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MAP ======== -->
+  <section class="section-padding reveal" id="contact-map" style="padding-top:0">
+    <div class="container">
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995!3d19.0821978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="LUXE Store Location"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT FORM + TEAM ======== -->
+  <section class="section-padding reveal" id="contact-form-section">
+    <div class="container">
+      <div class="contact-form-section">
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <p>Have a question, suggestion, or just want to say hello? Fill out the form and we'll get back to you within 24 hours.</p>
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" placeholder="How can we help?">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" placeholder="Tell us more..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+        <div>
+          <h3 style="margin-bottom: var(--space-lg);">Our Team</h3>
+          <p style="margin-bottom: var(--space-2xl); color: var(--color-muted);">Meet the people who make LUXE exceptional.</p>
+          <div style="display: flex; flex-direction: column; gap: var(--space-lg);">
+
+            <div class="team-card" style="display: flex; align-items: center; gap: var(--space-lg); text-align: left; padding: var(--space-lg);">
+              <div class="team-avatar" style="width:56px; height:56px; font-size:1rem; flex-shrink:0;">AK</div>
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:2px;">Arjun Kapoor</h4>
+                <p style="font-size:0.75rem;">Founder & CEO</p>
+              </div>
+            </div>
+
+            <div class="team-card" style="display: flex; align-items: center; gap: var(--space-lg); text-align: left; padding: var(--space-lg);">
+              <div class="team-avatar" style="width:56px; height:56px; font-size:1rem; flex-shrink:0;">SM</div>
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:2px;">Sofia Martinez</h4>
+                <p style="font-size:0.75rem;">Creative Director</p>
+              </div>
+            </div>
+
+            <div class="team-card" style="display: flex; align-items: center; gap: var(--space-lg); text-align: left; padding: var(--space-lg);">
+              <div class="team-avatar" style="width:56px; height:56px; font-size:1rem; flex-shrink:0;">RN</div>
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:2px;">Raj Nair</h4>
+                <p style="font-size:0.75rem;">Head of Design</p>
+              </div>
+            </div>
+
+            <div class="team-card" style="display: flex; align-items: center; gap: var(--space-lg); text-align: left; padding: var(--space-lg);">
+              <div class="team-avatar" style="width:56px; height:56px; font-size:1rem; flex-shrink:0;">LP</div>
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:2px;">Lena Park</h4>
+                <p style="font-size:0.75rem;">Head of Operations</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== NEWSLETTER ======== -->
+  <section class="newsletter section-padding reveal">
+    <div class="container">
+      <div class="newsletter-inner">
+        <h2>Stay in the <span class="gold-text">Loop</span></h2>
+        <p>Subscribe to get early access to new collections, exclusive offers, and style inspiration.</p>
+        <form class="newsletter-form"><input type="email" placeholder="Enter your email address" required><button type="submit">Subscribe</button></form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">LU<span>X</span>E</a>
+          <p>Curating luxury lifestyle essentials since 2018. We believe in quality, craftsmanship, and timeless style.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h5>Quick Links</h5><ul><li><a href="shop.html">Shop All</a></li><li><a href="about.html">Our Story</a></li><li><a href="blog.html">Journal</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">FAQ</a></li></ul></div>
+        <div class="footer-col"><h5>Account</h5><ul><li><a href="#">My Account</a></li><li><a href="#">Order Tracking</a></li><li><a href="cart.html">Shopping Cart</a></li><li><a href="#">Wishlist</a></li><li><a href="#">Returns</a></li></ul></div>
+        <div class="footer-col"><h5>Contact</h5><ul class="footer-contact"><li><i class="fa-solid fa-location-dot"></i><span>562 Wellington Road,<br>Mumbai, MH 400001</span></li><li><i class="fa-solid fa-phone"></i><span>+91 98765 43210</span></li><li><i class="fa-solid fa-envelope"></i><span>hello@luxestore.com</span></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 LUXE. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping Policy</a></div></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart — LUXE</title>
+  <meta name="description" content="Review your LUXE shopping cart. Manage items, apply coupon codes, and proceed to checkout.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">LU<span>X</span>E</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="cart.html" class="nav-cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-badge" id="cart-badge">3</span></a>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+
+  <!-- ======== PAGE HEADER ======== -->
+  <section class="page-header">
+    <div class="page-header-bg" style="background-image: url('images/page-header.png')"></div>
+    <div class="page-header-content">
+      <h1>Shopping Cart</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span class="current">Cart</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CART ======== -->
+  <section class="section-padding" id="cart-section">
+    <div class="container">
+
+      <!-- Cart Table -->
+      <div class="cart-table-wrapper">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="cart-product">
+                  <div class="cart-product-img">
+                    <img src="images/product-1.png" alt="Classic Leather Jacket">
+                  </div>
+                  <div class="cart-product-info">
+                    <h5>Classic Leather Jacket</h5>
+                    <p>Size: M &middot; Color: Black</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="cart-price">$289.00</span></td>
+              <td>
+                <div class="quantity-controls">
+                  <button class="qty-btn qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn qty-plus">+</button>
+                </div>
+              </td>
+              <td><span class="cart-subtotal">$289.00</span></td>
+              <td><button class="cart-remove" title="Remove item"><i class="fa-solid fa-xmark"></i></button></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cart-product">
+                  <div class="cart-product-img">
+                    <img src="images/product-3.png" alt="Premium Timepiece">
+                  </div>
+                  <div class="cart-product-info">
+                    <h5>Premium Timepiece</h5>
+                    <p>Style: Gold Case</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="cart-price">$499.00</span></td>
+              <td>
+                <div class="quantity-controls">
+                  <button class="qty-btn qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn qty-plus">+</button>
+                </div>
+              </td>
+              <td><span class="cart-subtotal">$499.00</span></td>
+              <td><button class="cart-remove" title="Remove item"><i class="fa-solid fa-xmark"></i></button></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cart-product">
+                  <div class="cart-product-img">
+                    <img src="images/product-8.png" alt="Gold Pendant Necklace">
+                  </div>
+                  <div class="cart-product-info">
+                    <h5>Gold Pendant Necklace</h5>
+                    <p>Length: 18"</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="cart-price">$580.00</span></td>
+              <td>
+                <div class="quantity-controls">
+                  <button class="qty-btn qty-minus">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn qty-plus">+</button>
+                </div>
+              </td>
+              <td><span class="cart-subtotal">$580.00</span></td>
+              <td><button class="cart-remove" title="Remove item"><i class="fa-solid fa-xmark"></i></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Cart Actions -->
+      <div class="cart-actions">
+        <div class="coupon-section">
+          <h4>Have a Coupon?</h4>
+          <form class="coupon-form">
+            <input type="text" placeholder="Enter coupon code (try LUXE20)">
+            <button type="submit" class="btn btn-outline btn-sm">Apply</button>
+          </form>
+        </div>
+
+        <div class="cart-totals">
+          <h4>Cart Totals</h4>
+          <div class="cart-totals-row">
+            <span>Subtotal</span>
+            <span id="cart-subtotal">$1,368.00</span>
+          </div>
+          <div class="cart-totals-row">
+            <span>Shipping</span>
+            <span id="cart-shipping">Free</span>
+          </div>
+          <div class="cart-totals-row total">
+            <span>Total</span>
+            <span id="cart-total">$1,368.00</span>
+          </div>
+          <button class="btn btn-primary" onclick="alert('Thank you! This is a demo checkout.')">
+            Proceed to Checkout <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======== NEWSLETTER ======== -->
+  <section class="newsletter section-padding reveal">
+    <div class="container">
+      <div class="newsletter-inner">
+        <h2>Stay in the <span class="gold-text">Loop</span></h2>
+        <p>Subscribe to get early access to new collections, exclusive offers, and style inspiration.</p>
+        <form class="newsletter-form"><input type="email" placeholder="Enter your email address" required><button type="submit">Subscribe</button></form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">LU<span>X</span>E</a>
+          <p>Curating luxury lifestyle essentials since 2018. We believe in quality, craftsmanship, and timeless style.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h5>Quick Links</h5><ul><li><a href="shop.html">Shop All</a></li><li><a href="about.html">Our Story</a></li><li><a href="blog.html">Journal</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">FAQ</a></li></ul></div>
+        <div class="footer-col"><h5>Account</h5><ul><li><a href="#">My Account</a></li><li><a href="#">Order Tracking</a></li><li><a href="cart.html">Shopping Cart</a></li><li><a href="#">Wishlist</a></li><li><a href="#">Returns</a></li></ul></div>
+        <div class="footer-col"><h5>Contact</h5><ul class="footer-contact"><li><i class="fa-solid fa-location-dot"></i><span>562 Wellington Road,<br>Mumbai, MH 400001</span></li><li><i class="fa-solid fa-phone"></i><span>+91 98765 43210</span></li><li><i class="fa-solid fa-envelope"></i><span>hello@luxestore.com</span></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 LUXE. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping Policy</a></div></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

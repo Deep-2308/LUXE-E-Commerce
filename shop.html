@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — LUXE Premium Fashion</title>
+  <meta name="description" content="Browse our curated collection of luxury fashion, accessories, and lifestyle products. Find premium leather goods, designer eyewear, timepieces, and more.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">LU<span>X</span>E</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="cart.html" class="nav-cart" id="nav-cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+
+  <!-- ======== PAGE HEADER ======== -->
+  <section class="page-header">
+    <div class="page-header-bg" style="background-image: url('images/page-header.png')"></div>
+    <div class="page-header-content">
+      <h1>Our Collection</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="current">Shop</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SHOP CONTENT ======== -->
+  <section class="section-padding" id="shop-content">
+    <div class="container">
+
+      <!-- Controls -->
+      <div class="shop-controls">
+        <p class="shop-results">Showing 1–12 of 24 products</p>
+        <div class="shop-filter-group">
+          <select id="shop-category">
+            <option value="all">All Categories</option>
+            <option value="clothing">Clothing</option>
+            <option value="accessories">Accessories</option>
+            <option value="footwear">Footwear</option>
+            <option value="jewelry">Jewelry</option>
+          </select>
+          <select id="shop-sort">
+            <option value="featured">Sort by: Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="newest">Newest First</option>
+            <option value="rating">Best Rating</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid">
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <span class="product-tag new">New</span>
+            <img src="images/product-1.png" alt="Classic Leather Jacket">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Originals</div>
+            <h5 class="product-name">Classic Leather Jacket</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <span>(124)</span>
+            </div>
+            <div class="product-price"><span class="current">$289.00</span><span class="original">$350.00</span></div>
+          </div>
+        </a>
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <img src="images/product-2.png" alt="Designer Sunglasses">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Eyewear</div>
+            <h5 class="product-name">Designer Sunglasses</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              <span>(89)</span>
+            </div>
+            <div class="product-price"><span class="current">$165.00</span></div>
+          </div>
+        </a>
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <span class="product-tag sale">Sale</span>
+            <img src="images/product-3.png" alt="Premium Timepiece">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Timepieces</div>
+            <h5 class="product-name">Premium Timepiece</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span>(256)</span>
+            </div>
+            <div class="product-price"><span class="current">$499.00</span><span class="original">$650.00</span></div>
+          </div>
+        </a>
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <img src="images/product-4.png" alt="Silk Evening Dress">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Couture</div>
+            <h5 class="product-name">Silk Evening Dress</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <span>(67)</span>
+            </div>
+            <div class="product-price"><span class="current">$425.00</span></div>
+          </div>
+        </a>
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <span class="product-tag new">New</span>
+            <img src="images/product-5.png" alt="Minimalist Sneakers">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Footwear</div>
+            <h5 class="product-name">Minimalist Sneakers</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              <span>(43)</span>
+            </div>
+            <div class="product-price"><span class="current">$195.00</span></div>
+          </div>
+        </a>
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <img src="images/product-6.png" alt="Leather Handbag">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Accessories</div>
+            <h5 class="product-name">Leather Handbag</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span>(182)</span>
+            </div>
+            <div class="product-price"><span class="current">$340.00</span><span class="original">$420.00</span></div>
+          </div>
+        </a>
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <img src="images/product-7.png" alt="Cashmere Sweater">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Knitwear</div>
+            <h5 class="product-name">Cashmere Sweater</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <span>(95)</span>
+            </div>
+            <div class="product-price"><span class="current">$275.00</span></div>
+          </div>
+        </a>
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <span class="product-tag new">New</span>
+            <img src="images/product-8.png" alt="Gold Pendant Necklace">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Jewelry</div>
+            <h5 class="product-name">Gold Pendant Necklace</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span>(211)</span>
+            </div>
+            <div class="product-price"><span class="current">$580.00</span></div>
+          </div>
+        </a>
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <span class="product-tag sale">Sale</span>
+            <img src="images/product-1.png" alt="Bomber Leather Jacket">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Originals</div>
+            <h5 class="product-name">Bomber Leather Jacket</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              <span>(78)</span>
+            </div>
+            <div class="product-price"><span class="current">$245.00</span><span class="original">$310.00</span></div>
+          </div>
+        </a>
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <img src="images/product-3.png" alt="Chronograph Watch">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Timepieces</div>
+            <h5 class="product-name">Chronograph Watch</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span>(167)</span>
+            </div>
+            <div class="product-price"><span class="current">$725.00</span></div>
+          </div>
+        </a>
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <img src="images/product-5.png" alt="Leather Oxford Shoes">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Footwear</div>
+            <h5 class="product-name">Leather Oxford Shoes</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <span>(53)</span>
+            </div>
+            <div class="product-price"><span class="current">$320.00</span></div>
+          </div>
+        </a>
+
+        <a href="sproduct.html" class="product-card">
+          <div class="product-img">
+            <img src="images/product-8.png" alt="Diamond Stud Earrings">
+            <div class="product-overlay">
+              <button class="product-overlay-btn" data-action="add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></button>
+              <button class="product-overlay-btn" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+              <button class="product-overlay-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">LUXE Jewelry</div>
+            <h5 class="product-name">Diamond Stud Earrings</h5>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span>(134)</span>
+            </div>
+            <div class="product-price"><span class="current">$890.00</span></div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <span class="active">1</span>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======== NEWSLETTER ======== -->
+  <section class="newsletter section-padding reveal" id="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <h2>Stay in the <span class="gold-text">Loop</span></h2>
+        <p>Subscribe to get early access to new collections, exclusive offers, and style inspiration.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">LU<span>X</span>E</a>
+          <p>Curating luxury lifestyle essentials since 2018. We believe in quality, craftsmanship, and timeless style.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="shop.html">Shop All</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Account</h5>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i><span>562 Wellington Road,<br>Mumbai, MH 400001</span></li>
+            <li><i class="fa-solid fa-phone"></i><span>+91 98765 43210</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span>hello@luxestore.com</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 LUXE. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
